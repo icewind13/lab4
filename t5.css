@@ -1,0 +1,43 @@
+#square {
+    width: 200px;
+    height: 200px;
+    position: center;
+    background: grey;
+    animation: swing linear 15s infinite;
+}
+
+@keyframes swing {
+    0% {
+        background: grey;
+    }
+
+    10% {
+        transform:perspective(200px) rotateX(-45deg);
+    }
+
+    25% {
+        background: gold;
+    }
+
+    40% {
+        transform: perspective(200px) rotateY(45deg);
+    }
+
+    50% {
+        height:100px;
+        width:300px;
+    }
+    60% {
+        background: grey;
+    }
+    75%{
+        transform:perspective(200px) rotateX(0deg);
+    }
+    90% {
+        height:200px;
+        width:200px;
+    }
+    100%{
+        transform: perspective(200px) rotateY(0deg);
+    }
+}

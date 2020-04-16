@@ -1,0 +1,25 @@
+#square {
+    width: 200px;
+    height: 200px;
+    position: center;
+    background: indigo;
+    animation: color1 linear 21s infinite;
+}
+
+@keyframes color1{
+    0%{
+        background:grey;
+    }
+    12%{
+        background: red;
+    }
+    50%{
+        background:gold;
+    }
+    88%{
+        background:yellow;
+    }
+    100%{
+        background:green;
+    }
+}
